@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <a href="{{ '/' | relative_url }}">MIDWAY<span aria-hidden="true">.</span></a>
+      <p>Una propiedad en la rampa de la Carr. #2, Sabana Grande, Puerto Rico.</p>
+    </div>
+
+    <div class="site-footer__nav">
+      <p class="footer-label">Explora</p>
+      <ul>
+        {% for item in site.data.navigation %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="site-footer__status">
+      <p class="footer-label">Visión</p>
+      <p>MIDWAY combina actividad comercial, terrenos y conceptos de desarrollo en una propiedad conectada a la Carr. #2.</p>
+    </div>
+  </div>
+
+  <div class="container site-footer__bottom">
+    <p>&copy; {{ site.time | date: '%Y' }} MIDWAY</p>
+    <p>Sabana Grande, PR</p>
+  </div>
+</footer>

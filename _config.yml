@@ -1,0 +1,22 @@
+title: MIDWAY
+tagline: Acceso, actividad y visión de desarrollo en Sabana Grande
+description: "MIDWAY es una propiedad con actividad comercial, terrenos y conceptos de desarrollo junto a la rampa de la Carretera #2 en Sabana Grande, Puerto Rico."
+lang: es-PR
+locale: es_PR
+timezone: America/Puerto_Rico
+url: https://ramonmisla-code.github.io
+baseurl: /Midway
+permalink: pretty
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/images/aerial-community-enhanced.jpg
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

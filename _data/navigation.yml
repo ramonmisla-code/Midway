@@ -1,0 +1,15 @@
+- label: Inicio
+  key: home
+  url: /
+- label: Ubicación
+  key: location
+  url: /ubicacion/
+- label: Negocios y terrenos
+  key: spaces
+  url: /espacios/
+- label: Futuros Proyectos
+  key: future
+  url: /futuros-proyectos/
+- label: Galería
+  key: gallery
+  url: /galeria/

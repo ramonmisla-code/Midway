@@ -1,0 +1,30 @@
+<div class="location-ribbon">
+  <div class="container location-ribbon__inner">
+    <span>Sabana Grande</span>
+    <span class="location-ribbon__mark" aria-hidden="true"></span>
+    <span>Puerto Rico</span>
+  </div>
+</div>
+
+<header class="site-header" data-site-header>
+  <div class="container site-header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="MIDWAY — página principal">
+      <img src="{{ '/assets/images/midway-service-station.png' | relative_url }}" width="334" height="212" alt="MIDWAY Service Station">
+    </a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
+      <span class="menu-toggle__label">Menú</span>
+      <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
+    </button>
+
+    <nav class="site-nav" id="site-navigation" aria-label="Navegación principal" data-site-nav>
+      <ul>
+        {% for item in site.data.navigation %}
+          <li>
+            <a href="{{ item.url | relative_url }}"{% if page.nav_key == item.key %} class="is-active" aria-current="page"{% endif %}>{{ item.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
