@@ -1607,6 +1607,66 @@ h3 {
   text-transform: uppercase;
 }
 
+.personal-care-perspectives {
+  padding-top: clamp(54px, 7vw, 90px);
+  padding-bottom: clamp(90px, 11vw, 150px);
+}
+
+.personal-care-perspectives__heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.75fr);
+  align-items: end;
+  gap: clamp(28px, 5vw, 72px);
+  margin-bottom: 30px;
+  padding-top: clamp(54px, 7vw, 90px);
+  border-top: 1px solid rgba(26, 34, 28, 0.16);
+}
+
+.personal-care-perspectives__heading h3 {
+  max-width: 540px;
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.85rem, 3.2vw, 3.1rem);
+  font-weight: 500;
+  line-height: 1.03;
+}
+
+.personal-care-perspectives__heading > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.personal-care-perspectives__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.personal-care-perspective {
+  margin: 0;
+  padding: 12px;
+  background: #fff;
+  box-shadow: 0 18px 55px rgba(26, 34, 28, 0.11);
+}
+
+.personal-care-perspective img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.personal-care-perspective figcaption {
+  margin: 12px 4px 2px;
+  color: var(--muted);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .residential-panel {
   position: relative;
   display: flex;
@@ -1895,6 +1955,14 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .personal-care-perspectives__heading {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-care-perspectives__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .high-park-perspective {
     grid-column: span 6;
   }
@@ -1919,6 +1987,11 @@ h3 {
   }
 
   .high-park-perspectives__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .personal-care-perspectives__grid {
     grid-template-columns: 1fr;
     gap: 18px;
   }
