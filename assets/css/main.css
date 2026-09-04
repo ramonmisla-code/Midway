@@ -1666,6 +1666,10 @@ h3 {
   padding-top: clamp(54px, 7vw, 90px);
 }
 
+.personal-care-reference-plans {
+  padding-top: clamp(54px, 7vw, 90px);
+}
+
 .personal-care-drawings__heading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 0.75fr);
