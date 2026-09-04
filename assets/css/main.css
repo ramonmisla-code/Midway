@@ -1699,6 +1699,10 @@ h3 {
   gap: 28px;
 }
 
+.personal-care-drawings__grid--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .personal-care-drawings figure {
   margin: 0;
   padding: 14px;
