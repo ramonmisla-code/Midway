@@ -967,6 +967,28 @@ h3 {
   border-right: 0;
 }
 
+.business-card__location-image {
+  margin: 30px 0 0;
+  overflow: hidden;
+  background: #d5d8d1;
+}
+
+.business-card__location-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.business-card__location-image figcaption {
+  padding: 10px 12px;
+  color: var(--muted);
+  background: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .status-label--inline {
   font-family: var(--sans);
   font-size: 0.58rem;
