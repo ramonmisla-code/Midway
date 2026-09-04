@@ -1225,6 +1225,21 @@ h3 {
   margin-bottom: 0;
 }
 
+.site-footer__contact {
+  display: grid;
+  gap: 7px;
+}
+
+.site-footer__contact a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-footer__contact a:hover {
+  color: var(--sand);
+}
+
 .footer-label {
   margin-bottom: 25px;
   color: var(--sand);
